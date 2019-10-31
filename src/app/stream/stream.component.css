@@ -1,0 +1,15 @@
+.search{
+    padding-bottom: 5px;
+}
+
+input.form-control, .black {
+    background-color: black;
+    border: 0;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }

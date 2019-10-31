@@ -1,0 +1,14 @@
+<form class="" [formGroup]="newUser">
+    <input class="form-control top-margin-2 input-sm bg-dark text-light" type="text" formControlName='login' placeholder="Login" />
+    <input class="form-control top-margin-2 input-sm bg-dark text-light" type="password" formControlName='password'
+        placeholder="Password" />
+    <input class="form-control top-margin-2 input-sm bg-dark text-light" type="password" formControlName='passwordConfirm'
+        placeholder="Confirm pwd" />
+    <div class="row alert-danger" *ngIf='errPwd'>
+        <div class="col">
+            Difference between Password and Confirmation
+        </div>
+    </div>
+    <button class="btn btn-primary justify-content-center form-control top-margin-2" [disabled]="!newUser.valid"
+        (click)='signIn()'>Sign In</button>
+</form>

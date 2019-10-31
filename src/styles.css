@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: black;
+}
+.bg{
+    background-color: black;
+    color: white;
+}
+.icon i{
+    float: left;
+    padding: 0 10px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}

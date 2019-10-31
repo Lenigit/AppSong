@@ -1,0 +1,50 @@
+[
+    {
+        "id" : 1,
+        "artiste" : "Akon",
+        "img" : "/assets/imgs/albums/Akon_Trouble.jpg",
+        "title" : "Trouble",
+        "year" : 2004,
+        "style" : "R&B"
+    },
+    {
+        "id" : 2,
+        "artiste" : "Avril Lavigne",
+        "img" : "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Let_Go_cover.png/220px-Let_Go_cover.png",
+        "title" : "Let Go",
+        "year" : 2002,
+        "style" : "Rock"
+    },
+    {
+        "id" : 3,
+        "artiste" : "Christine and the Queens",
+        "img" : "https://static.fnac-static.com/multimedia/Images/FR/NR/ef/38/89/8993007/1540-1/tsp20180718102103/Chris-Edition-Collector-2-CD.jpg",
+        "title" : "Chris",
+        "year" : 2018,
+        "style" : "Pop"
+    },
+    {
+        "id" : 4,
+        "artiste" : "Ninho",
+        "img" : "https://e-leclerc.scene7.com/is/image/gtinternet/Titelive_0190295466701_D_0190295466701?op_sharpen=1&resmode=bilin&wid=600&hei=600",
+        "title" : "Destin",
+        "year" : 2019,
+        "style" : "Rap"
+    },
+    {
+        "id": 0,
+        "artiste" : "Camel Driver",
+        "img" : "/assets/imgs/albums/CamelDriver.jpg",
+        "title" : "Camel driver",
+        "year" : 2014,
+        "style" : "Stoner"
+    },
+    {
+        "id": 5,
+        "artiste" : "Jabberwocky",
+        "img" : "/assets/imgs/albums/Jabberwocky.jpg",
+        "title" : "Jabberwocky",
+        "year" : 2013,
+        "style" : "Electro"
+    }
+]

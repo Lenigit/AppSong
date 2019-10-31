@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "title": "Great Spirit",
+        "link": "./public/DbSong/Armin_van_Buuren_vs_Vini_Vici_feat._Hilight_Tribe_-_Great_Spirit_(Extended_Mix).mp3",
+        "id_album": 1,
+        "style" : "Electro",
+        "likes" : 2
+    },
+    {
+        "id": 2,
+        "title": "Lose Yourself",
+        "link": "./public/DbSong/Eminem_-_Lose_Yourself_[HD].mp3",
+        "id_album": 2,
+        "style" : "Rap/RnB",
+        "likes" : 4
+    }
+    ,{
+        "id": 3,
+        "title": "Couper-décaler",
+        "link": "./public/DbSong/Teeyah_-_Couper-décaler.mp3",
+        "id_album": 3,
+        "style" : "Soul",
+        "likes" : 8
+    },
+    {
+        "id" : 4,
+        "title" : "Talus",
+        "link" : "public/DbSong/CamelDriver-Talus.mp3",
+        "id_album" : 0,
+        "likes" : 2,
+        "style" : "Stoner"
+    },
+    {
+        "id" : 5,
+        "title" : "Devil's Marbels",
+        "link" : "public/DbSong/CamelDriver-DevilsMarbels.mp3",
+        "id_album" : 0,
+        "likes" : 0,
+        "style" : "Stoner"
+    },
+    {
+        "id" : 6,
+        "title" : "Party Orge",
+        "link" : "public/DbSong/CamelDriver-PartyOrge.mp3",
+        "id_album" : 0,
+        "likes" : 0,
+        "style" : "Stoner"
+    },
+    {
+        "id" : 7,
+        "title" : "Photomaton",
+        "link" : "public/DbSong/Jabberwocky-Photomaton.mp3",
+        "id_album" : 5,
+        "likes" : 0,
+        "style" : "Electro"
+    }
+    
+]

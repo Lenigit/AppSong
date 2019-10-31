@@ -1,0 +1,56 @@
+<div class="container">
+    <ng-container *ngIf='idUser==undefined'>
+        <div class="row text-light">
+            <div class="col">
+                <a class="cursor" (click)='loadFormSignIn()'>Sign In</a>
+                &nbsp;|&nbsp;
+                <a class="cursor" (click)='loadFormLogIn()'>Log In</a>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf='idUser!=undefined'>
+        <div class="row text-light">
+            <div class="col-4">
+                <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>&nbsp;
+            </div>
+            <div class="col text-left">
+                <h3>{{login}}</h3>
+                <a class="cursor" (click)="logOut()">Log out</a>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container #logForm *ngIf='idUser==undefined'></ng-container>
+
+    <div class="row">
+        <div class="col text-light">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-light cursor" routerLink='/top'>
+                        <i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;Top 50
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light cursor" routerLink='/stream'>
+                        <i class="fa fa-cloud" aria-hidden="true"></i>&nbsp;Stream
+                    </a>
+                </li>
+
+                <ng-container *ngIf='idUser!=undefined'>
+                    <li class="nav-item">
+                        <a class="nav-link text-light cursor" routerLink='/likes'>
+                            <i class="fa fa-heart" aria-hidden="true"></i>&nbsp;Likes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light cursor" (click)="showPlaylists()">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>&nbsp;Playslists
+                        </a>
+                        <ng-container #playlists></ng-container>
+                    </li>
+                </ng-container>
+            </ul>
+        </div>
+    </div>
+</div>

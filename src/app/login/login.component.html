@@ -1,0 +1,12 @@
+<form class="" [formGroup]="logUser">
+    <input class="form-control top-margin-2 input-sm bg-dark text-light" type="text" formControlName='login' placeholder="Login" />
+    <input class="form-control top-margin-2 input-sm bg-dark text-light" type="password" formControlName='password'
+        placeholder="Password" />
+    <div class="row alert-danger" *ngIf='errPwd'>
+        <div class="col">
+            Wrong Login or Password
+        </div>
+    </div>
+    <button class="btn btn-primary justify-content-center form-control top-margin-2" [disabled]="!logUser.valid"
+        (click)='logIn()'>Log In</button>
+</form>

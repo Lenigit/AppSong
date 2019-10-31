@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.h100 {
+  height:100%;
+}
+
+.body {
+  left:300px;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar {
+    height: 100%; 
+    width: 300px; 
+    min-width: 300px; 
+    position: fixed;
+     z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background-color: #222326;
+    /* overflow-x: hidden;  */
+    /* padding-top: 20px; */
+    padding:20px 0px 0px 0px;
+
+}
+/* .sidenav a:hover {
+  color: #f1f1f1;
+} */
+.bg{
+  background-color: black;
+  /* width: 100%;
+  padding: 30px; */
+}
+.relativepos {
+  position: relative;
+}

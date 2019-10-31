@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row mb-5">
+        <div class="search border-bottom col-4 offset-2 input-group md-form form-sm form-1 pl-0">
+            <input class="form-control" type="text" name="search" [(ngModel)]="search" (keyup)="load()" placeholder="Search" aria-label="Search">
+            <div class="input-group-prepend">
+                <span class="input-group-text black" id="basic-text1"><i class="fa fa-search"
+                        aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <ng-container *ngIf="view as 'stream'">
+
+        <div class="row">
+            <div class="offset-2">
+                <div class="row">
+                    <div class="col-2 offset-1" *ngFor="let album of albums | filter:search">
+                        <div class="card bg" style="width: 14rem;">
+                            <a href="/stream/{{album.id}}"><img class="card-img-top" src="{{album.img}}"
+                                    alt="Card image cap"></a>
+                            <div class="card-body bg">
+                                <h5 class="card-title" style="overflow:hidden">{{album.titre}}</h5>
+                                <p class="card-text">{{album.artiste}}</p>
+                            </div>
+                            <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i><i class="fa fa-retweet"
+                                    aria-hidden="true"></i><i class="fa fa-bookmark" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="view as 'album'">
+            <div class="row offset-2">
+                <div class="col-2 offset-1" *ngFor="let song of songs">
+                    <div class="card bg" style="width: 14rem;">
+                        <a href="/stream/{{album.id}}"><img class="card-img-top" src="{{song.link}}"
+                                alt="Card image cap"></a>
+                        <div class="card-body bg">
+                            <h5 class="card-title" style="overflow:hidden">{{song.titre}}</h5>
+                            <p class="card-text">{{song.artiste}}</p>
+                        </div>
+                        <div class="icon"><i class="fa fa-heart" aria-hidden="true"></i><i class="fa fa-retweet"
+                                aria-hidden="true"></i><i class="fa fa-bookmark" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </ng-container>
+</div>

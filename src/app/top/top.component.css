@@ -1,0 +1,29 @@
+.imgstyle {
+    min-width:198px;
+}
+.widthmax {
+    min-width:200px;
+}
+.card-body {
+    padding:10px;
+}
+.card-title {
+    font-size: 14px;
+
+}
+.card-text {
+    font-size: 12px;
+    color: lightgrey;
+}
+.card {
+    margin-top:10px;
+    border:none;
+}
+
+.titlebox {
+    height : 30px;
+}
+
+.bg-black {
+    background-color: black;
+}

@@ -1,0 +1,13 @@
+.cursor {
+    cursor: pointer;
+}
+.list_pl, .list_pl_u {
+    font-size:12px;
+}
+
+.list_pl_u {
+    border-bottom: thin solid lightgrey;
+}
+.top-margin-2 {
+    margin-top:2px;
+}
